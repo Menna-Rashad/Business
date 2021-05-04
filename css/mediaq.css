@@ -1,0 +1,169 @@
+@media (max-width: 435px) {
+  #about div.aboutwrap div.cont img {
+    width: 250px;
+  }
+  #about div.aboutwrap div.cont {
+    max-width: 284px; /*8px border+1px outline+25px position+ 250px imgwidth*/
+  }
+  header div.wrap1 div.img div.titlewrap div.title p {
+    font-weight: 400;
+  }
+  #pricing div.parent ul.outer ul.inner li {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 0 10px;
+  }
+  #get div.contact div.dt p {
+    width: 250px;
+  }
+}
+@media (min-width: 320px) {
+  header {
+    background-size: cover;
+  }
+  header nav ul {
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+  }
+  header div.wrap1 div.img div.titlewrap {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 567px) {
+  header div.wrap1 div.img div.titlewrap {
+    font-size: 1rem;
+  }
+  #services div.serviceswrap {
+    height: 890px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #services div.serviceswrap div {
+    height: 385px;
+    line-height: 385px;
+  }
+  #services div.serviceswrap div.item1 {
+    background: url("../images/Development-cn.png") no-repeat center 45px,
+      url("../images/Development-bg.jpg") no-repeat center bottom;
+  }
+  #services div.serviceswrap div.item1:hover {
+    background: url("../images/Develop-hover-icn.png") no-repeat center 45px,
+      url("../images/Development-bg.jpg") no-repeat center bottom;
+  }
+  #services div.serviceswrap div.item2 {
+    background: url("../images/desgin-icn.png") no-repeat center 45px,
+      url("../images/desgin-bg.jpg") no-repeat center bottom;
+  }
+  #services div.serviceswrap div.item2:hover {
+    background: url("../images/desgin-hover-icn.png") no-repeat center 45px,
+      url("../images/desgin-bg.jpg") no-repeat center bottom;
+  }
+  #services div.serviceswrap div.item3 {
+    background: url("../images/concept-icn.png") no-repeat center 45px,
+      url("../images/concept-bg.jpg") no-repeat center bottom;
+  }
+  #services div.serviceswrap div.item3:hover {
+    background: url("../images/concept-hover-icn.png") no-repeat center 45px,
+      url("../images/concept-bg.jpg") no-repeat center bottom;
+  }
+  #services div.serviceswrap div.item4 {
+    background: url("../images/systam-icn.png") no-repeat center 45px,
+      url("../images/systam-bg.jpg") no-repeat center bottom;
+  }
+  #services div.serviceswrap div.item4:hover {
+    background: url("../images/systam-hover-icn.png") no-repeat center 45px,
+      url("../images/systam-bg.jpg") no-repeat center bottom;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    background-size: auto;
+    background-position: top center;
+  }
+}
+@media (min-width: 992px) {
+  header nav {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  header nav h1.logo {
+    text-align: right;
+    flex-basis: 35%;
+  }
+  header nav ul {
+    flex-basis: 55%;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 1024px) {
+  #services div.serviceswrap {
+    height: 385px;
+  }
+}
+@media (min-width: 1046px) {
+  header nav ul li {
+    flex-basis: 115px;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    height: 760px;
+    position: relative;
+  }
+  header div.wrap1 div.img {
+    height: 50vh;
+    height: 468px;
+    width: 750px;
+  }
+  header div.wrap1 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -549px;
+    max-width: 1150px;
+  }
+  #about div.aboutwrap {
+    max-width: 1115px;
+    display: flex;
+    margin: 0 auto;
+  }
+  #about div.aboutwrap div.left {
+    width: 590px;
+  }
+  /*pricing section*/
+  #pricing div.parent {
+    height: 335px;
+  }
+  #pricing div.parent ul.outer li:first-child {
+    flex-basis: 55px;
+    font-size: 1rem;
+  }
+  #pricing div.parent ul.outer li:nth-of-type(2) {
+    flex-basis: 205px;
+  }
+  #pricing div.parent ul.outer li:nth-of-type(3) {
+    flex-basis: 690px;
+  }
+  #pricing div.parent ul.outer li:nth-of-type(4) {
+    flex-basis: 148px;
+    font-size: 1rem;
+  }
+  #pricing div.parent ul.outer ul.inner li {
+    padding: 0 40px;
+  }
+  #get div.getwrap {
+    max-width: 1000px;
+    flex-direction: row;
+    height: 475px;
+    justify-content: space-between;
+  }
+  #get form {
+    width: 530px;
+  }
+  #get div.contact {
+    width: 420px;
+  }
+}
