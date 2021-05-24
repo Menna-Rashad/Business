@@ -1,4 +1,4 @@
-@media (max-width: 435px) {
+@media screen and (max-width: 435px) {
   #about div.aboutwrap div.cont img {
     width: 250px;
   }
@@ -16,8 +16,17 @@
   #get div.contact div.dt p {
     width: 250px;
   }
+  #get div.contact div.dt div i {
+    padding-left: 20px;
+  }
+  #get div.contact div.social {
+    padding-left: 20px;
+  }
+  #get form {
+    margin-top: 20px;
+  }
 }
-@media (min-width: 320px) {
+@media screen and (min-width: 320px) {
   header {
     background-size: cover;
   }
@@ -30,7 +39,7 @@
     font-size: 0.7rem;
   }
 }
-@media (min-width: 567px) {
+@media screen and (min-width: 567px) {
   header div.wrap1 div.img div.titlewrap {
     font-size: 1rem;
   }
@@ -76,13 +85,13 @@
       url("../images/systam-bg.jpg") no-repeat center bottom;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   header {
     background-size: auto;
     background-position: top center;
   }
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   header nav {
     flex-wrap: nowrap;
     align-items: center;
@@ -96,17 +105,17 @@
     justify-content: flex-start;
   }
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   #services div.serviceswrap {
     height: 385px;
   }
 }
-@media (min-width: 1046px) {
+@media screen and (min-width: 1046px) {
   header nav ul li {
     flex-basis: 115px;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   header {
     height: 760px;
     position: relative;

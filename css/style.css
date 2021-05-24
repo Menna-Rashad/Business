@@ -18,7 +18,7 @@ html {
   height: 100%;
   margin: 0px;
   padding: 0px; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 :root {
   --mcolor: #ff9000;
@@ -27,7 +27,8 @@ body {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
   max-width: 100vw;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  /* can not use overflow-x: hidden; with position property*/
 }
 /*header section*/
 header {
@@ -41,6 +42,11 @@ header {
 }
 /* nav bar and logo/ title*/
 header nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-wrap: wrap;
@@ -110,6 +116,11 @@ header div.wrap1 div.content a {
   display: inline-block;
   margin-top: 1rem;
   background-color: rgba(0, 0, 0, 0.3);
+}
+header div.wrap1 div.content a:hover {
+  color: var(--mcolor);
+  cursor: pointer;
+  border-color: var(--mcolor);
 }
 header div.wrap1 div.img {
   background-image: url("../images/img1.jpg");
@@ -234,6 +245,23 @@ header div.wrap1 div.img div.titlewrap div.title p {
 #about div.aboutwrap div.right p:first-of-type {
   margin: 20px 0;
 }
+/*navigate to the top of the page button*/
+a.navToTop {
+  height: 3rem;
+  width: 3rem;
+  color: #000;
+  background-color: var(--mcolor);
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  border: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*our services section*/
 #services {
   padding: 3rem 0.5rem 4rem;
@@ -284,6 +312,7 @@ header div.wrap1 div.img div.titlewrap div.title p {
 }
 #services div.serviceswrap div:hover {
   color: #fff;
+  cursor: pointer;
 }
 #services div.serviceswrap div.item1 {
   background: url("../images/Development-cn.png") no-repeat center,
@@ -382,7 +411,7 @@ header div.wrap1 div.img div.titlewrap div.title p {
   font-size: 2rem;
   font-weight: 500;
 }
-#pricing div.parent ul.outer li:nth-of-type(4):hover {
+#pricing div.parent ul.outer > li:nth-of-type(4):hover {
   color: var(--mcolor);
   cursor: pointer;
 }
@@ -450,7 +479,7 @@ header div.wrap1 div.img div.titlewrap div.title p {
   max-width: 530px;
   display: flex;
   flex-direction: column;
-  height: 475px;
+  min-height: 475px;
   justify-content: space-between;
 }
 #get form input {
