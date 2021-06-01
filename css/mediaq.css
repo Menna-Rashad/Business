@@ -25,6 +25,12 @@
   #get form {
     margin-top: 20px;
   }
+  #get div.getwrap {
+    height: 880px;
+  }
+  footer small {
+    font-size: 10px;
+  }
 }
 @media screen and (min-width: 320px) {
   header {

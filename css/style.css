@@ -27,8 +27,7 @@ body {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
   max-width: 100vw;
-  /* overflow-x: hidden; */
-  /* can not use overflow-x: hidden; with position property*/
+  overflow-x: hidden;
 }
 /*header section*/
 header {
@@ -246,7 +245,7 @@ header div.wrap1 div.img div.titlewrap div.title p {
   margin: 20px 0;
 }
 /*navigate to the top of the page button*/
-a.navToTop {
+button.navToTop {
   height: 3rem;
   width: 3rem;
   color: #000;
@@ -261,6 +260,13 @@ a.navToTop {
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
+}
+button.navToTop:hover {
+  cursor: pointer;
+}
+.show {
+  visibility: visible !important;
 }
 /*our services section*/
 #services {
